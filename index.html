@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamaliya A - Full-Stack Developer</title>
+    <!--Tailwind Css Cdn-->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+
+
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <!--Tailwind Config Js-->
+    <script src="tailwind-config.js"></script>
+    
+    <!--Tailwind Css-->
+
+    <link rel="stylesheet" href="tailwind.css">
+ 
+ 
+  </head>
+  <body>
+    <!-- Navigation -->
+   
+
+    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-primary/20 ">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="font-orbitron font-bold text-xl neon-text">Jamaliya A</div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-primary transition-colors">Home</a>
+        <a href="#about" class="hover:text-primary transition-colors">About</a>
+        <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden w-8 h-8 flex items-center justify-center">
+        <i class="ri-menu-line text-xl text-white"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="md:hidden fixed top-0 right-0 h-full w-64 bg-black/95 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 flex flex-col p-6 space-y-6"
+  >
+    <button id="close-menu" class="self-end text-white text-2xl">
+      <i class="ri-close-line"></i>
+    </button>
+    <a href="#home" class="text-white hover:text-primary">Home</a>
+    <a href="#about" class="text-white hover:text-primary">About</a>
+    <a href="#skills" class="text-white hover:text-primary">Skills</a>
+    <a href="#projects" class="text-white hover:text-primary">Projects</a>
+    <a href="#contact" class="text-white hover:text-primary">Contact</a>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div class="floating-particles">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 2.5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 3.5s;"></div>
+      </div>
+      <div
+        class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 z-10 max-w-6xl mx-auto px-6"
+      >
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h1
+            class="font-orbitron font-black text-4xl md:text-5xl mb-6 text-primary neon-text"
+            style="text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.4);"
+          >
+            Jamaliya A
+          </h1>
+          <p 
+            class="text-xl md:text-2xl mb-8 text-gray-300 font-light tracking-wide"
+          >
+            <span id="typing-text"></span><span class="typing-cursor">|</span>
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6">
+            <button
+              class="flex items-center neon-button px-8 py-4 bg-primary/10 border-2 border-primary text-primary font-semibold !rounded-button hover:bg-primary hover:text-black transition-all duration-300 neon-glow whitespace-nowrap"
+              style="box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), inset 0 0 20px rgba(0, 255, 255, 0.2)"
+            >
+            
+            <a href="#contact" class="hire-me-btn">
+            
+              Hire Me 
+
+            
+</a>
+    
+    
+            </button>
+            <button  
+              class="flex gap-[5px] items-center neon-button px-8 py-4 bg-secondary/10 border-2 border-secondary text-secondary font-semibold !rounded-button hover:bg-secondary hover:text-white transition-all duration-300 magenta-glow whitespace-nowrap"
+              style="box-shadow: 0 0 20px rgb(255, 8, 214), inset 0 0 20px rgba(255, 0, 255, 0.2)"
+            >
+           
+              Download Resume
+               <img class="w-[30px]" src="images/download.png" alt="">
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/2 aspect-video rounded-lg overflow-hidden relative"
+          style="box-shadow: 0 0 30px rgba(0, 255, 255, 0.3), inset 0 0 30px rgba(0, 255, 255, 0.1)"
+        >
+          <div
+            class="absolute inset-0 border-2 border-primary rounded-lg pulse-border"
+          ></div>
+          <video
+            class="w-full h-full object-cover"
+            autoplay
+            loop
+            muted
+            playsinline
+            style="filter: brightness(0.9) contrast(1.1)"
+          >
+            <source src="images/intro.mp4" type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="font-orbitron text-4xl font-bold text-center mb-16 neon-text"
+        >
+          About Me
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="fade-in">
+            <div
+              class="w-80 h-80 mx-auto rounded-lg neon-border overflow-hidden"
+            >
+              <img
+                src="images/jamal.jpeg"
+                alt="Jamaliya A"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+          <div class="fade-in">
+            <div class="space-y-6">
+              <p class="text-lg leading-relaxed text-gray-300">
+                I'm a passionate final-year Computer Science and Engineering
+                student at EGS Pillay Engineering College (Autonomous), Tamil
+                Nadu, India. My journey in technology has been driven by an
+                insatiable curiosity for building innovative solutions that make
+                a real-world impact.
+              </p>
+              <p class="text-lg leading-relaxed text-gray-300">
+                Currently serving as an ERP System Manager at my college, I've
+                gained invaluable experience in managing complex enterprise
+                systems while pursuing my passion for full-stack development and
+                cybersecurity. I love transforming ideas into functional
+                applications that solve real problems.
+              </p>
+              <p class="text-lg leading-relaxed text-gray-300">
+                When I'm not coding, you'll find me exploring the latest
+                technologies, contributing to open-source projects, or mentoring
+                fellow students in their programming journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="cursor-pointer py-20 px-6 bg-gray-900/20">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="font-orbitron text-4xl font-bold text-center mb-16 neon-text"
+        >
+          Skills & Technologies
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-html5-fill text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">HTML5</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center pointer">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center cursor-pointer"
+            >
+              <i class="ri-css3-fill text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">CSS3</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-javascript-fill text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">JavaScript</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-reactjs-line text-3xl text-primary"></i>
+              
+            </div>
+            <h3 class="font-semibold">React.js</h3>
+          </div>
+
+             <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-reactjs-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">React.js</h3>
+          </div>
+
+
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-nodejs-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">Node.js</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-server-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">Express.js</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-microsoft-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">ASP.NET</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-database-2-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">MongoDB</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-database-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">MySQL</h3>
+          </div>
+          <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-shield-keyhole-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">Kali Linux</h3>
+          </div>
+
+                  <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-shield-keyhole-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">Kali Linux</h3>
+          </div>
+                  <div class="skill-card p-6 neon-border rounded-lg text-center">
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center"
+            >
+              <i class="ri-shield-keyhole-line text-3xl text-primary"></i>
+            </div>
+            <h3 class="font-semibold">Kali Linux</h3>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="font-orbitron text-4xl font-bold text-center mb-16 neon-text"
+        >
+           Modern Portfolio Website
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="project-card magenta-border rounded-lg overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img
+                src=""
+                alt="Owner Avatar Project"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-orbitron text-xl font-bold mb-3 text-secondary">
+                 Modern Portfolio <br> Website
+              </h3>
+              <p class="text-gray-300 mb-4">
+       Created a clean, responsive portfolio using Tailwind CSS. Features dynamic project showcases and smooth interactions, making it easy to highlight skills and work across all devices.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >MongoDB</span
+                >
+              </div>
+              <button
+                class="w-full px-4 py-2 bg-transparent border border-secondary text-secondary !rounded-button hover:bg-secondary hover:text-black transition-all duration-300 whitespace-nowrap"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="project-card magenta-border rounded-lg overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img
+                src=""
+                alt="Aveon Software Project"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-orbitron text-xl font-bold mb-3 text-secondary">
+                 E-commerce Web Application
+              </h3>
+              <p class="text-gray-300 mb-4">
+               Built a full-featured e-commerce site with product browsing, shopping cart, and secure checkout. Designed for fast performance and user-friendly shopping experience.
+
+
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >Express</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >MongoDB</span
+                >
+              </div>
+              <button
+                class="w-full px-4 py-2 bg-transparent border border-secondary text-secondary !rounded-button hover:bg-secondary hover:text-black transition-all duration-300 whitespace-nowrap"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="project-card magenta-border rounded-lg overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img
+                src=""
+                alt="ERP Manager Project"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-orbitron text-xl font-bold mb-3 text-secondary">
+               Weather Forecast <br>Web App
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Weather Forecast Web App
+Developed a weather app fetching real-time data based on location. Features clean UI and detailed weather info powered by a public API.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >npm</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full"
+                  >React</span
+                >
+                
+                 
+              </div>
+              <button
+                class="w-full px-4 py-2 bg-transparent border border-secondary text-secondary !rounded-button hover:bg-secondary hover:text-black transition-all duration-300 whitespace-nowrap"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+     
+    <section id="contact" class="py-20 px-6 bg-gray-900/20">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="font-orbitron text-4xl font-bold text-center mb-16 neon-text"
+        >
+          Get In Touch
+        </h2>
+        <div class="neon-border rounded-lg p-8">
+       
+            <form  class="space-y-6" method="post" action="https://script.google.com/macros/s/AKfycbwE3tuIAeKGwHEEMoh3bLkEusBFI8hNkNAUl51Qrorq2MEUu6FCpTvrH0yYUF2Zj0WWkw/exec" name="contact-form"> 
+            <div>
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full px-4 py-3 rounded-lg text-sm"
+                required
+                name="your-name"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full px-4 py-3 rounded-lg text-sm"
+                required
+                name="your-email"
+              />
+            </div>
+            <div>
+              <textarea name="message" placeholder="Your Message" rows="6" class="w-full px-4 py-3 rounded-lg text-sm resize-none" required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full px-6 py-3 bg-gradient-to-r from-primary to-secondary text-black font-semibold !rounded-button hover:from-secondary hover:to-primary transition-all duration-300 whitespace-nowrap"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-primary/20">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">
+            Built with <span class="heart text-red-500">❤️</span> by Jamaliya A
+            | © 2025
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="social-icon w-10 h-10 flex items-center justify-center"
+            >
+              <i class="ri-github-fill text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="social-icon w-10 h-10 flex items-center justify-center"
+            >
+              <i class="ri-linkedin-fill text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
